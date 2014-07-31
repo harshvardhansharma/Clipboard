@@ -1,0 +1,23 @@
+{
+  "name": "chrome2phone",
+  "description": "A Simple App to copy content from web-browser to phone's clipboard.",
+  "manifest_version": 2,
+  "version": "1.0",
+  "icons": {
+    "16": "icon.png"
+  },
+  "background": {
+    "scripts": ["jquery.js", "background.js"]
+  },
+  "permissions": [
+    "tabs",
+    "http://*/*",
+    "https://*/*",
+    "notifications",
+    "contextMenus"
+  ],
+  "browser_action": {
+    "default_title": "Chrome2Phone",
+    "default_icon": "icon.png"
+  }
+}
